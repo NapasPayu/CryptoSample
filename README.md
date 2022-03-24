@@ -30,7 +30,6 @@ Modules are collection of source files and build settings that allow you to divi
 ## Tech-stack
 ### Programming language
 - [Kotlin](https://kotlinlang.org) 100%
-- 
 ### Dependencies
 -   [Jetpack](https://developer.android.com/jetpack):
     -   [Android KTX](https://developer.android.com/kotlin/ktx.html) - provide concise, idiomatic Kotlin to Jetpack and Android platform APIs.
