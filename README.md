@@ -9,11 +9,10 @@ The architecture of the application is based, apply and strictly complies with e
 -   [Model-View-ViewModel](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) (MVVM) pattern facilites a [separation](https://en.wikipedia.org/wiki/Separation_of_concerns) of development of the graphical user interface.
 
 ## Modules
-
 Modules are collection of source files and build settings that allow you to divide a project into discrete units of functionality. In this case apart from dividing by functionality/responsibility, existing the following dependence between them.
 
 ### App module
-`:app` module is an [com.android.application](https://developer.android.com/studio/build/), which is needed to create the app bundle.  It is also responsible for initiating the dependency graph, [play core](https://developer.android.com/reference/com/google/android/play/core/release-notes) and another project global libraries, differentiating especially between different app environments.
+`:app` module is an [com.android.application](https://developer.android.com/studio/build/), which is needed to create the app bundle.  It is also responsible for initiating the dependency graph, [play core](https://developer.android.com/reference/com/google/android/play/core/release-notes) and other project global libraries, differentiating especially between different app environments.
 
 ### Data module
 `:data` module is an [com.android.library](https://developer.android.com/studio/projects/android-library)  for serving network requests or accessing to the database. Providing the data source for the many features that require it.
@@ -25,12 +24,13 @@ Modules are collection of source files and build settings that allow you to divi
 `:feature` modules are [com.android.dynamic-feature](https://developer.android.com/studio/projects/dynamic-delivery). It is essentially a gradle module which can be downloaded independently from the base application module. It can hold code and resources and include dependencies, just like any other gradle module.
 
 ## Dependency Management
--   External dependencies (libraries) are defined using [versions catalog](https://docs.gradle.org/7.2/userguide/platforms.html) with [the libs.versions.toml file](https://docs.gradle.org/7.2/userguide/platforms.html#sub:conventional-dependencies-toml).
+-   External dependencies (libraries) are defined using [versions catalog](https://docs.gradle.org/current/userguide/platforms.html) with [the libs.versions.toml file](https://docs.gradle.org/current/userguide/platforms.html#sub:conventional-dependencies-toml).
 -   Each `:feature` module depends on the `app:` module, so dependencies are shared without need to add them explicitly in each feature module.
 
 ## Tech-stack
 ### Programming language
 - [Kotlin](https://kotlinlang.org) 100%
+- 
 ### Dependencies
 -   [Jetpack](https://developer.android.com/jetpack):
     -   [Android KTX](https://developer.android.com/kotlin/ktx.html) - provide concise, idiomatic Kotlin to Jetpack and Android platform APIs.
