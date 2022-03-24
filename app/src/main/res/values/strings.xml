@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CryptoSample</string>
+    <string name="generic_error">Something went wrong.</string>
+    <string name="title_currencylist">CurrencyList</string>
+</resources>
