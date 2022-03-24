@@ -25,7 +25,7 @@ Modules are collection of source files and build settings that allow you to divi
 
 ## Dependency Management
 -   External dependencies (libraries) are defined using [versions catalog](https://docs.gradle.org/current/userguide/platforms.html) with [the libs.versions.toml file](https://docs.gradle.org/current/userguide/platforms.html#sub:conventional-dependencies-toml).
--   Each `:feature` module depends on the `app:` module, so dependencies are shared without need to add them explicitly in each feature module.
+-   Each feature module depends on the app module, so dependencies are shared without need to add them explicitly in each feature module.
 
 ## Tech-stack
 ### Programming language
